@@ -1,0 +1,32 @@
+[
+  {
+    "runbook_id": "RB-LEDGER-TIMEOUT",
+    "title": "Timeouts na integração com Ledger API",
+    "tags": [
+      "ledger-api",
+      "timeout",
+      "conciliation"
+    ],
+    "content": "Quando houver timeouts repetidos para ledger-api após deploy, verificar compatibilidade de payload, latência da dependência e configuração de timeout. Não realizar rollback automático; escalar para on-call de pagamentos se houver aumento de erros 500 acima de 10%."
+  },
+  {
+    "runbook_id": "RB-REPORTING-SLOW",
+    "title": "Lentidão em geração de relatórios",
+    "tags": [
+      "reporting",
+      "database",
+      "latency"
+    ],
+    "content": "Para lentidão em relatórios, verificar consultas com maior duração, fila de conexões e uso da réplica de leitura. Escalar se houver indisponibilidade ou impacto em fechamento financeiro."
+  },
+  {
+    "runbook_id": "RB-GENERAL-INCIDENT",
+    "title": "Triagem inicial de incidentes",
+    "tags": [
+      "incident",
+      "triage",
+      "severity"
+    ],
+    "content": "Incidentes com aumento de erro, indisponibilidade ou impacto financeiro devem registrar evidências, hipótese inicial, próximos passos e decisão de escalonamento. A resposta inicial não deve executar alterações automáticas."
+  }
+]

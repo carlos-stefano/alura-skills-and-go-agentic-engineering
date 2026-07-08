@@ -1,0 +1,12 @@
+{
+  "conciliation-service": {
+    "status": "degraded",
+    "version": "2.4.1",
+    "error_rate": 0.18
+  },
+  "reporting-service": {
+    "status": "degraded",
+    "version": "1.9.4",
+    "error_rate": 0.02
+  }
+}

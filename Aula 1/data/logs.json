@@ -1,0 +1,12 @@
+{
+  "INC-2026-001": [
+    "2026-07-04T09:06:12Z INFO deployment version=2.4.1 service=conciliation-service",
+    "2026-07-04T09:08:47Z WARN downstream_timeout dependency=ledger-api timeout_ms=3000",
+    "2026-07-04T09:09:01Z ERROR http_status=500 endpoint=/reconcile request_id=req-9af",
+    "2026-07-04T09:10:15Z ERROR retry_exhausted dependency=ledger-api attempts=3"
+  ],
+  "INC-2026-002": [
+    "2026-07-04T10:05:13Z WARN query_duration_ms=8900 report=monthly_revenue",
+    "2026-07-04T10:07:41Z WARN db_pool_wait_ms=2100 pool=reporting-read"
+  ]
+}
