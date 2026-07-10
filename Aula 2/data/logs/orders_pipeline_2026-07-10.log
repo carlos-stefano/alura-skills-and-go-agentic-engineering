@@ -1,0 +1,4 @@
+2026-07-10T10:15:02Z INFO job=orders_pipeline incident=INC-003 started batch_id=regional-772
+2026-07-10T10:15:03Z INFO job=orders_pipeline validation=success records=218 partner=regional
+2026-07-10T10:15:05Z ERROR job=orders_pipeline stage=transform error="Invalid isoformat string: '08/07/2026 10:00:00'" file="src/mini_orders_pipeline/transformacao_pedidos.py" function="transformar_pedido"
+2026-07-10T10:15:05Z INFO job=orders_pipeline action=halted reason="transformation_error"

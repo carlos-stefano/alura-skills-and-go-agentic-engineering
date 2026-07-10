@@ -1,0 +1,6 @@
+2026-07-08T02:13:02Z INFO starting job=orders_daily_ingestion partner=marketplace_beta batch=batch_887
+2026-07-08T02:13:04Z INFO loaded raw records count=1200 source=s3://orders/raw/marketplace_beta/batch_887.jsonl
+2026-07-08T02:13:07Z ERROR step=ingest_orders exception=KeyError message="'customer_id'" record_id=MB-7781
+2026-07-08T02:13:07Z ERROR payload_excerpt={"order_id":"MB-7781","order_total":89.9,"created_at":"2026-07-08T01:57:00Z","items":[{"sku":"A12","quantity":1}]}
+2026-07-08T02:13:08Z INFO retry attempt=1 status=failed same_error=true
+2026-07-08T02:14:11Z WARN job=orders_daily_ingestion status=aborted processed_records=231 failed_record=MB-7781

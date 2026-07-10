@@ -1,0 +1,4 @@
+2026-07-09T02:11:00Z INFO starting job=orders_daily_ingestion partner=mobile_app batch=batch_904
+2026-07-09T02:11:05Z WARN field=order_total unexpected_type=str examples=["59,90","120,00"]
+2026-07-09T02:11:20Z WARN transformation=calculate_daily_revenue records_with_invalid_total=32
+2026-07-09T02:12:00Z INFO job completed status=success rows_written=990

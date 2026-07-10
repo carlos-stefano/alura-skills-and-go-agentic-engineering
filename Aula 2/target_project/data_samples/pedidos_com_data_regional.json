@@ -1,0 +1,14 @@
+[
+  {
+    "order_id": "REG-1001",
+    "customer_id": "CUST-321",
+    "order_total": 120.5,
+    "created_at": "08/07/2026 10:00:00",
+    "items": [
+      {
+        "sku": "R10",
+        "quantity": 1
+      }
+    ]
+  }
+]

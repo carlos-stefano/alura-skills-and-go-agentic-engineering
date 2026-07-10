@@ -1,0 +1,33 @@
+{
+  "incident_id": "INC-001",
+  "diagnostico": {
+    "causa_provavel": "Ausência do campo 'customer_id' no lote enviado pelo parceiro marketplace_beta devido a schema drift, onde o campo enviado foi 'buyer_id' no lugar de 'customer_id', provocando KeyError na validação.",
+    "confianca": "alta",
+    "evidencias": [
+      "data/tickets/INC-001-schema-customer-id.md",
+      "data/historico/HIST-014-schema-drift-marketplace.md",
+      "data/logs/orders_pipeline_2026-07-08.log",
+      "target_project/src/mini_orders_pipeline/validacao_schema.py",
+      "target_project/src/mini_orders_pipeline/ingestao_pedidos.py"
+    ]
+  },
+  "modulos_afetados": [
+    "target_project/src/mini_orders_pipeline/validacao_schema.py",
+    "target_project/src/mini_orders_pipeline/ingestao_pedidos.py"
+  ],
+  "proposta_conceitual": {
+    "descricao": "Alterar a função de validação para verificar de forma segura a existência dos campos obrigatórios no pedido, gerando erros controlados e claros quando campos como 'customer_id' estiverem ausentes, ao invés de permitir KeyError não tratados. Implementar tratamento para identificar schema drift e emitir alertas apropriados.",
+    "tipo_mudanca": "validacao",
+    "nao_executar_automaticamente": true
+  },
+  "plano_de_testes": [
+    "Adicionar testes unitários na validação para pedidos com ausência do campo 'customer_id' e outros campos obrigatórios, assegurando que erros claros e controlados sejam levantados.",
+    "Testar ingestão do pipeline com lotes que apresentem schema drift (por exemplo, campo 'buyer_id' no lugar de 'customer_id') para verificar comportamento esperado e mensagens de erro estruturadas.",
+    "Validar que pedidos corretos continuam sendo processados com sucesso."
+  ],
+  "decisao": {
+    "pode_preparar_patch_na_aula_4": "sim",
+    "motivo": "Causa clara e localizada, com módulos e pontos de ajuste identificados e escopo técnico definido para correção.",
+    "requer_revisao_humana": true
+  }
+}

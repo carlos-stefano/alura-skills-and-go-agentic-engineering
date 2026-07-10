@@ -1,0 +1,8 @@
+[project]
+name = "mini-orders-pipeline"
+version = "0.1.0"
+description = "Projeto-alvo sintético para investigação de incidentes com agentes"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

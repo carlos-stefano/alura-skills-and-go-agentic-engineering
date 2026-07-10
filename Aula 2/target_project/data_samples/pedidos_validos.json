@@ -1,0 +1,14 @@
+[
+  {
+    "order_id": "ORD-001",
+    "customer_id": "CUST-123",
+    "order_total": 99.9,
+    "created_at": "2026-07-08T10:00:00Z",
+    "items": [
+      {
+        "sku": "A12",
+        "quantity": 1
+      }
+    ]
+  }
+]
