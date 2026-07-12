@@ -1,0 +1,7 @@
+{
+  "incident_id": "INC-1003",
+  "title": "Credencial possivelmente exposta",
+  "description": "Um token de acesso apareceu em um log de aplicação e precisa ser investigado.",
+  "severity": "critical",
+  "source": "security"
+}
