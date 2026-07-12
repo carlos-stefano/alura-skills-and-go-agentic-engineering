@@ -71,3 +71,33 @@ Uma boa solucao nesta aula deve:
 ## Resultado final da aula
 
 Ao concluir a Aula 3, voce tera um fluxo agentico mais previsivel, auditavel e seguro, preparado para cenarios reais com supervisao humana.
+
+## Rubrica de avaliacao (entregavel final)
+
+Escala por criterio:
+- 0 = nao atende;
+- 1 = atende parcialmente;
+- 2 = atende bem.
+
+| Criterio | O que avaliar | Nota (0-2) |
+|---|---|---|
+| 1. Estrutura da saida | Contrato final completo (campos obrigatorios e tipos corretos). |  |
+| 2. Rastreabilidade de evidencias | Evidencias especificas e verificaveis; sem conclusao importante sem evidencia. |  |
+| 3. Coerencia da analise | Resumo, hipoteses e recomendacoes sem contradicoes logicas. |  |
+| 4. Seguranca e governanca | Cautela em acoes de alto impacto; escalonamento quando necessario. |  |
+| 5. Retries e fallback | Retries com feedback util e limite explicito de tentativas. |  |
+| 6. Decisao final do fluxo | Decisao clara entre aceitar, tentar novamente ou revisar com humano. |  |
+| 7. Regressao e estabilidade | Avaliacao por propriedades de qualidade, com comportamento estavel. |  |
+| 8. Qualidade do relatorio | Resultado legivel, auditavel e com limites/incertezas explicitados. |  |
+
+Pontuacao total: soma maxima de 16 pontos.
+
+Interpretacao sugerida:
+- 14 a 16: aprovado com seguranca;
+- 11 a 13: aprovado com ressalvas;
+- 8 a 10: reforco recomendado antes de concluir;
+- 0 a 7: nao aprovado.
+
+Regra de corte recomendada (gating):
+- nota total minima de 12;
+- obrigatorio: criterio 2 >= 1, criterio 4 >= 1 e criterio 5 >= 1.
