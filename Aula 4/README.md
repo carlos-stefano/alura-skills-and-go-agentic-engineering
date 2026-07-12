@@ -99,6 +99,23 @@ uvicorn target_project.incident_agent.app.api:app --reload
 
 A aplicação exige `OPENAI_API_KEY`, ou adaptação do provedor em `shared/aula_4/llm.py`.
 
+## Testes
+
+Os testes automatizados desta aula pertencem ao projeto operacional em `target_project/incident_agent`.
+
+Execute a suíte a partir da raiz do repositório ou do próprio subprojeto:
+
+```bash
+pytest target_project/incident_agent/tests -q
+```
+
+ou:
+
+```bash
+cd target_project/incident_agent
+pytest -q
+```
+
 ## Comparação arquitetural
 
 O arquivo `target_project/incident_agent/app/single_agent_baseline.py` oferece uma alternativa compacta. Ele não pretende ser uma solução completa, mas apoiar a discussão:
