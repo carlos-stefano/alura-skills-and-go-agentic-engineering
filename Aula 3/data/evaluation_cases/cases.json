@@ -1,0 +1,26 @@
+[
+  {
+    "case_id": "case_timeout",
+    "incident": {
+      "incident_id": "EVAL-001",
+      "title": "Pipeline excedeu o tempo limite",
+      "description": "A execução terminou por timeout após aumento de volume."
+    },
+    "expectations": {
+      "requires_evidence": true,
+      "minimum_confidence": 0.5
+    }
+  },
+  {
+    "case_id": "case_insufficient_information",
+    "incident": {
+      "incident_id": "EVAL-002",
+      "title": "Falha não identificada",
+      "description": "O serviço falhou sem mensagem, log associado ou alteração conhecida."
+    },
+    "expectations": {
+      "requires_human_review": true,
+      "maximum_confidence": 0.6
+    }
+  }
+]
