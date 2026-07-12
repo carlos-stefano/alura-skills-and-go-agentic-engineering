@@ -1,0 +1,8 @@
+{
+  "id": "LOG-001",
+  "source_type": "log",
+  "title": "Log do job orders_daily",
+  "service": "orders_pipeline",
+  "symptoms": "timeout raw_orders orders_daily leitura",
+  "content": "A leitura de raw_orders excedeu 300 segundos. A etapa de escrita não foi iniciada e não há registro de duplicação."
+}

@@ -1,0 +1,8 @@
+{
+  "id": "RB-002",
+  "source_type": "runbook",
+  "title": "Picos de latência em API",
+  "service": "public_api",
+  "symptoms": "latência intermitente picos sem aumento de volume",
+  "content": "Compare latência por endpoint, saturação de conexões, dependências externas e percentis. Se não houver evidência suficiente, escale para análise humana."
+}

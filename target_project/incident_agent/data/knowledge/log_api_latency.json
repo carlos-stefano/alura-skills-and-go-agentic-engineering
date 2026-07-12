@@ -1,0 +1,8 @@
+{
+  "id": "LOG-002",
+  "source_type": "log",
+  "title": "Métricas sintéticas de latência da API",
+  "service": "public_api",
+  "symptoms": "latência intermitente p95 dependência externa",
+  "content": "Os picos aparecem no p95 do endpoint /search. Não há aumento simultâneo de erros de banco; uma dependência externa apresenta variação de resposta."
+}
