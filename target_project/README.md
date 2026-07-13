@@ -1,30 +1,12 @@
-# mini_orders_pipeline
+# Projetos-alvo do curso
 
-Este é o projeto-base usado na Aula 2 para análise de incidentes com agentes.
+Este diretório centraliza os projetos usados pelas aulas.
 
-Você vai trabalhar com um pipeline simplificado de pedidos de e-commerce, identificando falhas, rastreando impacto entre módulos e propondo correções.
+## Estrutura
 
-## Visão geral do fluxo
+- `mini_orders_pipeline/`: projeto-base usado nas Aulas 2 e 3 para investigação de incidentes em um pipeline de pedidos.
+- `incident_agent/`: aplicação operacional da Aula 4 com workflow multiagente, CLI, API e Docker.
 
-1. `ingestao_pedidos.py`: recebe registros brutos.
-2. `validacao_schema.py`: valida campos obrigatórios e estrutura esperada.
-3. `transformacao_pedidos.py`: normaliza dados e calcula campos derivados.
-4. `notificacao_falhas.py`: prepara mensagens de erro para acompanhamento.
+## Regra de organização
 
-## Como explorar o projeto
-
-- Código-fonte: `src/mini_orders_pipeline/`
-- Testes: `tests/`
-- Amostras de entrada: `data_samples/`
-
-Sugestão de leitura:
-
-1. Entenda o fluxo de ponta a ponta pelos módulos em `src`.
-2. Rode os testes para observar o comportamento esperado.
-3. Use os arquivos de `data_samples` para reproduzir cenários de erro e validar hipóteses.
-
-## Escopo
-
-O projeto foi intencionalmente reduzido para facilitar investigação e experimentação.
-
-Em outras palavras: ele prioriza clareza de raciocínio sobre cobertura completa de casos de produção.
+Novos projetos-alvo devem ser adicionados aqui, em subpastas explícitas, para evitar duplicação de `target_project` dentro das pastas das aulas.

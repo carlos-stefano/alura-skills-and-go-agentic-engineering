@@ -1,0 +1,7 @@
+{
+  "incident_id": "INC-1002",
+  "title": "Latência intermitente na API",
+  "description": "A API apresenta picos de latência sem correlação clara com volume ou erro de banco.",
+  "severity": "medium",
+  "source": "support"
+}
