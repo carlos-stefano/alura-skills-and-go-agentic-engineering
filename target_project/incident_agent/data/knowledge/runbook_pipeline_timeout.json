@@ -1,0 +1,8 @@
+{
+  "id": "RB-001",
+  "source_type": "runbook",
+  "title": "Timeout em pipeline de ingestão",
+  "service": "orders_pipeline",
+  "symptoms": "timeout leitura raw_orders job orders_daily",
+  "content": "Verifique disponibilidade da origem, volume de dados e conexões abertas. Não reinicie automaticamente se houver risco de duplicação. Gere diagnóstico e solicite aprovação antes de reprocessar."
+}

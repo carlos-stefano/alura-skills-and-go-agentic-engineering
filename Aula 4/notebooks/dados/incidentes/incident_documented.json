@@ -1,0 +1,7 @@
+{
+  "incident_id": "INC-1001",
+  "title": "Falha no pipeline de pedidos",
+  "description": "O job orders_daily falhou após timeout na leitura da tabela raw_orders.",
+  "severity": "high",
+  "source": "monitoring"
+}

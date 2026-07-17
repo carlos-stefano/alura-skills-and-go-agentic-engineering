@@ -1,0 +1,8 @@
+{
+  "id": "HIST-001",
+  "source_type": "history",
+  "title": "Incidente anterior de timeout em raw_orders",
+  "service": "orders_pipeline",
+  "symptoms": "timeout raw_orders volume conexão",
+  "resolution": "O incidente anterior foi causado por saturação temporária da origem. O reprocessamento ocorreu somente após validação de ausência de escrita parcial."
+}
