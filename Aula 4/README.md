@@ -61,7 +61,7 @@ Ao final, os alunos deverão ser capazes de:
 │   ├── 01_do_prototipo_ao_workflow_operacional.ipynb
 │   ├── 02_observabilidade_e_metricas.ipynb
 │   ├── 03_autonomia_controlada_api_e_docker.ipynb
-│   └── GUIA_DOCENTE.md
+│   └── dados/
 └── requirements-aula4.txt
 ```
 
