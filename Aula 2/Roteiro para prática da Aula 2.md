@@ -97,7 +97,7 @@ Executar ao menos 2 intervenções técnicas relevantes:
 Regra:
 - Intervenção sem comparação baseline vs variante não vale.
 
-## Duas intervencoes sugeridas (exemplos)
+## Duas intervenções sugeridas (exemplos)
 Se o grupo estiver em dúvida, usem estas duas intervenções prontas como ponto de partida.
 
 ### Intervencao A - Prompt mais rigoroso para o revisor
@@ -119,7 +119,7 @@ O que observar no A/B:
 - A justificativa final ficou mais concreta?
 - O custo de tempo aumentou muito?
 
-### Intervencao B - Guardrail determinístico de bloqueio
+### Intervenção B - Guardrail determinístico de bloqueio
 Objetivo:
 - impedir que propostas avancem sem qualidade mínima.
 
@@ -143,29 +143,29 @@ O que observar no "A/B" (justificando):
 Façam benchmark simplificado.
 
 Passos:
-1. Definam hipítese testável.
+1. Definam hipótese testável.
 2. Executem baseline (1 rodada).
 3. Executem variante (1 rodada).
 4. Comparem na tabela.
 
-| Metrica | Baseline | Variante | Diferenca | Observacao |
+| Métrica | Baseline | Variante | Diferença | Observação |
 |---|---:|---:|---:|---|
-| Cobertura de evidencias (0-2) |  |  |  |  |
-| Coerencia do diagnostico (0-2) |  |  |  |  |
+| Cobertura de evidências (0-2) |  |  |  |  |
+| Coerência do diagnóstico (0-2) |  |  |  |  |
 | Qualidade do plano de testes (0-2) |  |  |  |  |
-| Rastreabilidade da decisao (0-2) |  |  |  |  |
+| Rastreabilidade da decisão (0-2) |  |  |  |  |
 | Custo/tempo relativo (0-2 invertido) |  |  |  |  |
 
 Conclusão obrigatória:
 1. A variante melhorou o sistema?
 2. O ganho justifica o custo?
 
-Exemplo rapido de preenchimento (apenas referencia):
+Exemplo rápido de preenchimento (apenas referência):
 
-| Metrica | Baseline | Variante | Diferenca | Observacao |
+| Métrica | Baseline | Variante | Diferença | Observação |
 |---|---:|---:|---:|---|
-| Cobertura de evidencias (0-2) | 1 | 2 | +1 | Revisor passou a exigir 3 evidências independentes |
-| Coerencia do diagnostico (0-2) | 1 | 2 | +1 | Menos contradições entre causa e módulos afetados |
+| Cobertura de evidências (0-2) | 1 | 2 | +1 | Revisor passou a exigir 3 evidências independentes |
+| Coerência do diagnóstico (0-2) | 1 | 2 | +1 | Menos contradições entre causa e módulos afetados |
 | Qualidade do plano de testes (0-2) | 1 | 2 | +1 | Plano ficou com casos verificáveis |
 | Rastreabilidade da decisao (0-2) | 1 | 2 | +1 | Decisão final cita critérios explícitos |
 | Custo/tempo relativo (0-2 invertido) | 2 | 1 | -1 | Variante demorou um pouco mais |
@@ -183,18 +183,18 @@ Entreguem um unico arquivo markdown com este formato:
 ## Incidente analisado
 - ID:
 
-## Diagnostico
-- Causa provavel:
-- Confianca (baixa/media/alta):
-- Evidencias principais:
+## Diagnóstico
+- Causa provável:
+- Confiana (baixa/media/alta):
+- Evidências principais:
 
 ## Modulos afetados
 - Lista:
 
 ## Proposta conceitual
-- Descricao:
-- Tipo de mudanca:
-- Nao executar automaticamente: sim
+- Descrição:
+- Tipo de mudança:
+- Não executar automaticamente: sim
 
 ## Plano de testes
 1.
@@ -202,40 +202,29 @@ Entreguem um unico arquivo markdown com este formato:
 3.
 
 ## Revisao e decisao
-- Status: aprovar | aprovar com condicoes | bloquear
+- Status: aprovar | aprovar com condições | bloquear
 - Riscos/lacunas:
-- Requer revisao humana: sim
+- Requer revisão humana: sim
 
 ## Experimento tecnico aplicado
-- Tipo de intervencao:
+- Tipo de intervenção:
 - O que mudou:
-- Por que essa mudanca foi escolhida:
+- Por que essa mudança foi escolhida:
 - Risco que ela tenta reduzir:
 
 ## Benchmark A/B (enxuto)
 - Hipotese:
 - Baseline (resumo):
 - Variante (resumo):
-- Comparacao final:
-- Decisao tecnica final:
+- Comparação final:
+- Decisão técnica final:
 - Trade-off principal (qualidade vs tempo ou complexidade):
 ```
 
-## Rubrica de avaliacao
-Cada item vale de 0 a 2 pontos. Total: 10.
-
-1. Qualidade das evidencias.
-2. Coerencia tecnica da hipotese.
-3. Qualidade do plano de testes.
-4. Rastreabilidade da decisao.
-5. Governanca (limites de autonomia e revisao humana).
-
-Bonus opcional (+1): benchmark muito bem justificado com trade-off claro.
-
 ## Checklist final
 Antes de entregar, confiram:
-1. Cada conclusao tem evidencia.
-2. A proposta nao executa mudanca automatica.
+1. Cada conclusão tem evidência.
+2. A proposta não executa mudança automática.
 3. O plano de testes e objetivo.
-4. A decisao final esta justificada.
-5. Existe comparacao baseline vs variante.
+4. A decisao final está justificada.
+5. Existe comparação baseline vs variante.
