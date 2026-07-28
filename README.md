@@ -105,3 +105,27 @@ pip install -r requirements.txt
 - Erros de importação: verifique se o notebook executou a celula de setup de caminho.
 - Variáveis de ambiente não reconhecidas: confirme o arquivo .env e reinicie o kernel.
 - Diferença de resultados entre execuções: revise modelo, temperatura e critérios da aula.
+
+## Referencias de Estudo
+
+A seguir, algumas referências úteis para aprofundar os conceitos abordados ao longo do curso:
+
+### Documentações oficiais
+
+- [LangGraph](https://langchain-ai.github.io/langgraph/)
+- [LangChain](https://python.langchain.com/)
+- [OpenAI API](https://platform.openai.com/docs)
+- [Anthropic API](https://docs.anthropic.com/)
+- [Python](https://docs.python.org/3/)
+
+### Bibliografia e materiais complementares
+
+- [Designing Machine Learning Systems](https://www.oreilly.com/library/view/designing-machine-learning/9781098107956/) - Chip Huyen
+- [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) - Jay Alammar
+- [Building LLM Applications for Production](https://www.deeplearning.ai/short-courses/building-llm-applications-for-production/) - DeepLearning.AI
+
+### Recursos recomendados para prática
+
+- [Exemplos de projetos com LangGraph e agentes](https://github.com/langchain-ai/langgraph/tree/main/examples)
+- [Tutoriais de integração com APIs e ferramentas externas](https://python.langchain.com/docs/tutorials)
+- [Estudos sobre avaliação de respostas, testes de regressão e revisão humana](https://arxiv.org/search/?query=LLM+evaluation)
